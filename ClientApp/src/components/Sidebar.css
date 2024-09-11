@@ -1,0 +1,77 @@
+﻿.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 50px; /* 适应顶部导航栏高度 */
+    left: 0;
+    height: calc(100% - 50px); /* 调整高度以适应顶部导航栏 */
+    background-color: #343a40;
+    padding-top: 20px;
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; /* 确保没有额外的间距 */
+    }
+
+        .sidebar ul li {
+            padding: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column; /* 使子菜单垂直排列 */
+            align-items: flex-start;
+            cursor: pointer;
+        }
+
+.menu-title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none; /* 禁止文本选择 */
+    outline: none; /* 去掉点击后的聚焦框 */
+    width: 100%; /* 确保宽度为100%，以避免文本折行 */
+}
+
+    .menu-title:focus {
+        outline: none; /* 去掉点击后的聚焦框 */
+    }
+
+    .menu-title .arrow {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+        transition: transform 0.3s;
+    }
+
+        .menu-title .arrow.open {
+            transform: rotate(225deg);
+        }
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 100%; /* 确保宽度为100%，以避免文本折行 */
+}
+
+    .submenu.open {
+        max-height: 200px; /* 根据实际需要调整 */
+    }
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    white-space: nowrap; /* 确保文本不换行 */
+}
+
+    .sidebar ul li a:hover {
+        text-decoration: underline;
+    }
