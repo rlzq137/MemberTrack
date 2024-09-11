@@ -1,0 +1,30 @@
+﻿.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .login-container h2 {
+        margin-bottom: 20px;
+    }
+
+    .login-container input {
+        margin: 10px 0;
+        padding: 15px; /* 增加输入框内边距 */
+        width: 100%;
+    }
+
+    .login-container button {
+        margin: 10px 0;
+        padding: 15px; /* 增加按钮内边距 */
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }

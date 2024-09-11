@@ -1,0 +1,41 @@
+﻿.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.welcome-text {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 36px; /* 调大字体 */
+    font-weight: bold;
+    position: absolute;
+    top: 3%;
+}
+
+.form-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.form-container {
+    width: 400px; /* 增加宽度 */
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.5); /* 调整透明度 */
+    padding: 40px; /* 增加内边距 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    opacity: 0.5; /* 增加透明度 */
+}
+
+    .form-container:hover {
+        background: rgba(255, 255, 255, 0.9);
+        opacity: 1;
+    }

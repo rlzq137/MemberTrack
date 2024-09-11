@@ -1,0 +1,36 @@
+﻿.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form {
+    max-height: 400px; /* Adjust this value as needed */
+    overflow-y: auto;
+    width: 100%;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+}
+
+.register-container input {
+    margin: 10px 0;
+    padding: 15px; /* 增加输入框内边距 */
+    width: 100%;
+}
+
+.register-container button {
+    margin: 10px 0;
+    padding: 15px; /* 增加按钮内边距 */
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .register-container button:hover {
+        background-color: #0056b3;
+    }

@@ -1,0 +1,59 @@
+﻿.admin-dashboard {
+    display: flex;
+    height: 100vh; /* 确保内容区域至少占满整个屏幕高度 */
+}
+
+.main-content {
+    margin-left: 200px; /* 侧边栏宽度 */
+    width: calc(100% - 200px);
+    padding-top: 50px; /* 顶部导航栏高度 */
+    background-color: #f8f9fa; /* 增加背景色以匹配整体布局 */
+}
+
+.content {
+    padding: 20px;
+}
+
+.topbar {
+    width: 100%; /* 确保顶部导航栏从左到右全部占据 */
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .topbar .title {
+        font-size: 18px;
+    }
+
+    .topbar .location {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .topbar .user-info {
+        display: flex;
+        align-items: center;
+        margin-right: 20px; /* 增加右边距 */
+    }
+
+        .topbar .user-info span {
+            margin-right: 10px;
+        }
+
+        .topbar .user-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+            .topbar .user-info a:hover {
+                text-decoration: underline;
+            }
