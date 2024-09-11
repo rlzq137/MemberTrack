@@ -1,0 +1,57 @@
+﻿.member-dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+            .sidebar ul li:hover {
+                background-color: #444;
+            }
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.activity-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-list th, .activity-list td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.activity-list th {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+.main {
+    padding: 2em;
+}
+
+.login, .register, .home, .admin-dashboard, .member-list {
+    background-color: #fff;
+    padding: 2em;
+    margin: 2em auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0.7em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #555;
+    }
+
+.quick-links a {
+    display: block;
+    margin: 1em 0;
+    color: #333;
+    text-decoration: none;
+}
+
+    .quick-links a:hover {
+        text-decoration: underline;
+    }
